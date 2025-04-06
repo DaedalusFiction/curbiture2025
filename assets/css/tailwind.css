@@ -1,0 +1,160 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+  @apply border-border dark:border-borderDarkMode relative transition-colors;
+}
+
+:root {
+  --color-primary: #0f7173;
+  --color-primary-dark-mode: #f1c40f;
+  --color-secondary: #df3b57;
+  --color-secondary-dark-mode: #f2542d;
+  --color-background: #f7f0f0;
+  --color-background-accent: #e3dbdc;
+
+  --font-header: Montserrat;
+  --font-sans: SourceSans;
+}
+
+body {
+  @apply bg-light dark:bg-backgroundDarkMode;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-header text-xl font-light dark:text-light uppercase;
+}
+
+p {
+  @apply font-sans text-lg font-light text-dark dark:text-light;
+}
+
+li {
+  @apply font-sans ml-5;
+}
+
+hr {
+  @apply border-t;
+}
+
+input[type="text"],
+select,
+textarea {
+  @apply w-full  border-b py-2 text-lg;
+}
+
+label {
+  @apply font-header;
+}
+
+@layer components {
+  .page-header {
+    @apply mb-4 mt-12 text-xl md:text-3xl;
+  }
+  .page-subheader {
+    @apply border-t mt-12 md:mt-0;
+  }
+  .games-grid {
+    @apply grid grid-cols-3 sm:grid-cols-6 gap-6 mt-3 lg:grid-cols-12;
+  }
+  .details {
+    @apply md:grid grid-cols-12 mx-auto mt-8 max-w-5xl gap-8;
+  }
+  .btn {
+    @apply py-2 px-3 w-fit font-sans text-center cursor-pointer bg-secondary dark:bg-primary duration-100 uppercase text-white rounded;
+  }
+  .btn-disabled {
+    @apply cursor-not-allowed bg-gray-400;
+  }
+  .card {
+    @apply bg-backgroundAccent rounded p-3 border;
+  }
+  .input-wrapper {
+    @apply bg-white border py-1 px-2 rounded;
+  }
+
+  .accent {
+    font-family: Genos;
+  }
+
+  .link {
+    @apply hover:text-primary dark:hover:text-primaryDarkMode transition;
+  }
+
+  .btn:hover {
+    filter: brightness(105%);
+  }
+  .btn:active {
+    filter: brightness(90%);
+  }
+
+  .youtube-video {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+  }
+
+  .image-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .image-container img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    width: auto;
+    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+  }
+}
+/* pairings */
+@font-face {
+  font-family: Karla;
+  src: url("~/assets/fonts/Karla.woff2") format("woff2");
+}
+@font-face {
+  font-family: Inconsolata;
+  src: url("~/assets/fonts/Inconsolata.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: Oswald;
+  src: url("~/assets/fonts/Oswald.woff2") format("woff2");
+}
+@font-face {
+  font-family: Quicksand;
+  src: url("~/assets/fonts/Quicksand.woff2") format("woff2");
+}
+@font-face {
+  font-family: Lora;
+  src: url("~/assets/fonts/Lora.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: Syne;
+  src: url("~/assets/fonts/Syne.woff2") format("woff2");
+}
+@font-face {
+  font-family: Inter;
+  src: url("~/assets/fonts/Inter.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url("~/assets/fonts/Montserrat.woff2") format("woff2");
+}
+@font-face {
+  font-family: SourceSans;
+  src: url("~/assets/fonts/SourceSans.woff2") format("woff2");
+}

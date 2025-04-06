@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+Allow: /search
+
+Disallow: /admin
+
+# Crawl-delay to be polite to search engines
+Crawl-delay: 10
+
+# Add your sitemap location
+# Sitemap: https://fictionaltemplate.com/sitemap.xml
