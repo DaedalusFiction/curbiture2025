@@ -25,7 +25,15 @@
         <p>events & miscellanea</p>
       </div>
       <div class="col-span-3 row-span-4 border image-container">
-        <img src="/public/images/moonFlowers.webp" alt="" />
+        <video
+          autoplay
+          loop
+          muted
+          playsinline
+          disablePictureInPicture
+          src="/public/videos/chinchillas.mp4"
+          class="video"
+        ></video>
       </div>
       <div class="col-span-4 row-span-2 border image-container">
         <img
@@ -36,7 +44,7 @@
       <div class="col-span-5 row-span-4 border image-container">
         <img src="/public/images/daedalus1.webp" alt="" />
       </div>
-      <div class="col-span-4 row-span-1 border p-1">
+      <div class="col-span-4 row-span-1 border p-1 flex items-center">
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa, in.
         </p>
@@ -44,7 +52,9 @@
       <div class="col-span-4 row-span-3 border image-container">
         <img src="/public/images/herbs.webp" alt="" />
       </div>
-      <div class="col-span-3 row-span-1 border p-1 bg-backgroundAccent">
+      <div
+        class="col-span-3 row-span-1 border p-1 flex items-center bg-backgroundAccent"
+      >
         <p>
           the hamburglar longs<br />for the day he will no more<br />steal for
           sustenance
@@ -54,9 +64,11 @@
         <img src="/public/images/sunset.webp" alt="" />
       </div>
       <div class="col-span-5 row-span-4 border image-container">
-        <img src="/public/images/aspenAndWinston.webp" alt="" />
+        <img src="/public/images/24Sign.webp" alt="" />
       </div>
-      <div class="col-span-7 row-span-1 border p-1 bg-backgroundAccent">
+      <div
+        class="col-span-7 row-span-1 border p-1 flex items-center bg-backgroundAccent"
+      >
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
           voluptas, ad officiis corrupti non ullam sit provident ab earum
@@ -64,19 +76,19 @@
         </p>
       </div>
       <div class="col-span-3 row-span-3 border image-container">
-        <img src="/public/images/aspenAndWinston.webp" alt="" />
+        <img src="/public/images/origamiJesus.webp" alt="" />
       </div>
       <div class="col-span-4 row-span-2 border image-container">
-        <img src="/public/images/aspenAndWinston.webp" alt="" />
+        <img src="/public/images/alethea.webp" alt="" />
       </div>
-      <div class="col-span-5 row-span-1 border p-1">
+      <div class="col-span-5 row-span-1 border p-1 flex items-center">
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
           voluptas, ad officiis corrupti non ullam sit provident ab earum
           consequuntur vel commodi natus, nisi autem?
         </p>
       </div>
-      <div class="col-span-2 row-span-1 border p-1">
+      <div class="col-span-2 row-span-1 border p-1 flex items-center">
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
           voluptas, ad officiis corrupti non ullam sit provident ab earum
@@ -87,21 +99,21 @@
         <img src="/public/images/aspenAndWinston.webp" alt="" />
       </div>
       <div class="col-span-5 row-span-3 border image-container">
-        <img src="/public/images/aspenAndWinston.webp" alt="" />
+        <img src="/public/images/gummies.webp" alt="" />
       </div>
       <div class="col-span-3 row-span-3 border image-container">
-        <img src="/public/images/aspenAndWinston.webp" alt="" />
+        <img src="/public/images/cardboardPoem.webp" alt="" />
       </div>
       <div class="col-span-4 row-span-2 border image-container">
-        <img src="/public/images/aspenAndWinston.webp" alt="" />
+        <img src="/public/images/infiniteEre.webp" alt="" />
       </div>
       <div class="col-span-3 row-span-2 border image-container">
-        <img src="/public/images/aspenAndWinston.webp" alt="" />
+        <img src="/public/images/pizzaBox.webp" alt="" />
       </div>
       <div class="col-span-2 row-span-2 border image-container">
-        <img src="/public/images/aspenAndWinston.webp" alt="" />
+        <img src="/public/images/frostFlowers.webp" alt="" />
       </div>
-      <div class="col-span-4 row-span-1 border p-1">
+      <div class="col-span-4 row-span-1 border p-1 flex items-center">
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
           voluptas, ad officiis corrupti non ullam sit provident ab earum
