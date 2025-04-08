@@ -4,13 +4,13 @@ import { getStorage } from "firebase/storage";
 import { GoogleAuthProvider, getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDzWtfwnNhIFsypHlshbCyEqQKe23LgDnY",
-  authDomain: "template-eb525.firebaseapp.com",
-  projectId: "template-eb525",
-  storageBucket: "template-eb525.firebasestorage.app",
-  messagingSenderId: "289606159742",
-  appId: "1:289606159742:web:8dbb03eede55b95e85b72f",
-  measurementId: "G-SXZDVWQGZX",
+  apiKey: "AIzaSyBlTDwWWB_VNJovqmLuRgLPe61IbPf97Uw",
+  authDomain: "curbiture-34969.firebaseapp.com",
+  projectId: "curbiture-34969",
+  storageBucket: "curbiture-34969.appspot.com",
+  messagingSenderId: "417687321307",
+  appId: "1:417687321307:web:a647f1a989eb820a0deafe",
+  measurementId: "G-NXV0KGQHF7",
 };
 
 const app = initializeApp(firebaseConfig);

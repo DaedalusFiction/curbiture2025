@@ -1,8 +1,8 @@
 <template>
   <footer
-    class="p-3 mt-12 bg-backgroundAccent dark:bg-backgroundAccentDarkMode border-t"
+    class="py-3 bg-backgroundAccent dark:bg-backgroundAccentDarkMode border-t"
   >
-    <div
+    <!-- <div
       class="flex flex-col max-w-screen-2xl mx-auto py-8 gap-4 md:grid grid-cols-12"
     >
       <div class="col-span-3">
@@ -50,8 +50,9 @@
           <p>Thank you for subscribing!</p>
         </div>
       </div>
-    </div>
-    <div class="md:flex gap-4 justify-between items-end">
+    </div> -->
+    <h6 class="hero-header italic text-primary my-12">Curbiture</h6>
+    <div class="md:flex px-3 gap-4 justify-between items-end">
       <div class="md:flex gap-6">
         <p class="text-center md:text-start">&copy; 2024 {{ siteName }}</p>
       </div>
@@ -87,7 +88,10 @@ const handleSubscribe = async () => {
 .footer-header {
   @apply font-header font-semibold text-lg  mt-3 mb-1;
 }
-
+.hero-header {
+  @apply leading-[1em];
+  font-size: clamp(3rem, 15vw, 17rem);
+}
 p,
 span {
   @apply text-sm;

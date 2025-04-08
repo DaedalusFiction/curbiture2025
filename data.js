@@ -1,18 +1,9 @@
-const siteName = "Template";
-const siteURL = "fictionalweb.com";
-const siteDescription = "Template description";
-const GTag = "G-SXZDVWQGZX";
+const siteName = "Curbiture";
+const siteURL = "curbiture.com";
+const siteDescription = "Alternative Charlottesville";
+const GTag = "G-NXV0KGQHF7";
 
-const pages = [
-  { title: "Articles", href: "/articles" },
-  { title: "Portfolio", href: "/portfolio" },
-  { title: "Videos", href: "/videos" },
-  { title: "Menu", href: "/menu" },
-  { title: "Events", href: "/events" },
-  { title: "About", href: "/about" },
-  { title: "Contact", href: "/contact" },
-  { title: "admin", href: "/admin" },
-];
+const pages = [{ title: "Articles", href: "/articles" }];
 
 const socialMediaLinks = [
   { title: "Facebook", href: "https://facebook.com" },

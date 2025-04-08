@@ -1,5 +1,5 @@
 <template>
-  <div class="pb-3 mb-3 border-b">
+  <div class="pb-3 mb-3">
     <h4 class="text-3xl">{{ event.title }}</h4>
     <p>{{ new Date(event.date).toLocaleDateString() }}, {{ event.time }}</p>
     <p>{{ event.location }}</p>

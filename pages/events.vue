@@ -1,15 +1,8 @@
 <template>
   <div>
-    <LayoutPageHeader header="Events"
-      ><p class="text-center text-dark">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque
-        voluptatem dolores error architecto quo placeat voluptatum sed quasi
-        aliquid obcaecati.
-      </p></LayoutPageHeader
-    >
+    <LayoutPageHeader header="Events"></LayoutPageHeader>
 
     <div class="max-w-screen-lg px-3 mx-auto">
-      <h3 class="text-3xl font-serif uppercase">Calendar of Events</h3>
       <div class="md:grid grid-cols-12 px-auto my-12 gap-12">
         <h2 class="mb-3 col-span-3">Upcoming</h2>
         <div class="col-span-9">
@@ -28,17 +21,7 @@
           />
         </div>
       </div>
-      <h4 class="text-3xl font-serif uppercase">Header Three</h4>
-      <div class="py-12 mx-auto max-w-2xl">
-        <iframe
-          class="youtube-video mb-3 rounded-xl"
-          src="https://www.youtube.com/embed/k2dlJQwZYQ0"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
-      </div>
+
       <h5 class="text-3xl font-serif uppercase">Inquiry Form</h5>
       <br />
       <p class="max-w-xl mx-auto text-center">

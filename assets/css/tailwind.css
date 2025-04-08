@@ -4,19 +4,20 @@
 
 * {
   scroll-behavior: smooth;
-  @apply border-border dark:border-borderDarkMode relative transition-colors;
+  @apply relative transition-colors;
 }
 
 :root {
-  --color-primary: #0f7173;
+  --color-border: #472d30;
+  --color-primary: #472d30;
   --color-primary-dark-mode: #f1c40f;
-  --color-secondary: #df3b57;
+  --color-secondary: #924724;
   --color-secondary-dark-mode: #f2542d;
-  --color-background: #f7f0f0;
-  --color-background-accent: #e3dbdc;
+  --color-background: #ffe1a8;
+  --color-background-accent: #c9cba3;
 
-  --font-header: Montserrat;
-  --font-sans: SourceSans;
+  --font-header: Uncial;
+  --font-sans: Della;
 }
 
 body {
@@ -29,11 +30,16 @@ h3,
 h4,
 h5,
 h6 {
-  @apply font-header text-xl font-light dark:text-light uppercase;
+  @apply font-header dark:text-light italic;
 }
 
-p {
-  @apply font-sans text-lg font-light text-dark dark:text-light;
+p,
+a {
+  @apply font-sans text-sm text-primary font-bold dark:text-light;
+}
+
+a {
+  @apply hover:text-secondary transition;
 }
 
 li {
@@ -47,7 +53,7 @@ hr {
 input[type="text"],
 select,
 textarea {
-  @apply w-full  border-b py-2 text-lg;
+  @apply w-full py-2 text-lg border-b;
 }
 
 label {
@@ -55,18 +61,6 @@ label {
 }
 
 @layer components {
-  .page-header {
-    @apply mb-4 mt-12 text-xl md:text-3xl;
-  }
-  .page-subheader {
-    @apply border-t mt-12 md:mt-0;
-  }
-  .games-grid {
-    @apply grid grid-cols-3 sm:grid-cols-6 gap-6 mt-3 lg:grid-cols-12;
-  }
-  .details {
-    @apply md:grid grid-cols-12 mx-auto mt-8 max-w-5xl gap-8;
-  }
   .btn {
     @apply py-2 px-3 w-fit font-sans text-center cursor-pointer bg-secondary dark:bg-primary duration-100 uppercase text-white rounded;
   }
@@ -80,10 +74,6 @@ label {
     @apply bg-white border py-1 px-2 rounded;
   }
 
-  .accent {
-    font-family: Genos;
-  }
-
   .link {
     @apply hover:text-primary dark:hover:text-primaryDarkMode transition;
   }
@@ -93,11 +83,6 @@ label {
   }
   .btn:active {
     filter: brightness(90%);
-  }
-
-  .youtube-video {
-    aspect-ratio: 16 / 9;
-    width: 100%;
   }
 
   .image-container {
@@ -157,4 +142,12 @@ label {
 @font-face {
   font-family: SourceSans;
   src: url("~/assets/fonts/SourceSans.woff2") format("woff2");
+}
+@font-face {
+  font-family: Della;
+  src: url("~/assets/fonts/Della.woff2") format("woff2");
+}
+@font-face {
+  font-family: Uncial;
+  src: url("~/assets/fonts/Uncial.woff2") format("woff2");
 }

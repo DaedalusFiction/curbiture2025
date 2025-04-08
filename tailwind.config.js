@@ -1,22 +1,20 @@
 module.exports = {
   theme: {
-    //
     fontFamily: {
-      // Restaurant
-      // header: ["Jost", "sans-serif"],
       sans: ["var(--font-sans)", "sans-serif"],
-
-      // Modern
-      header: ["var(--font-header)", "sans-serif"],
-      // sans: ["Varta", "sans-serif"],
-
-      // Fancy
-      // header: ["Gistesy", "sans-serif"],
-      // sans: ["Roxborough", "sans-serif"],
-
+      header: ["var(--font-header)", "serif"],
       serif: ["Quicksand", "serif"],
     },
     extend: {
+      borderWidth: {
+        DEFAULT: "5px", // Set default border width to 10px
+      },
+      borderColor: {
+        DEFAULT: "var(--color-border)", // Set default border color to white
+      },
+      borderRadius: {
+        DEFAULT: "1rem",
+      },
       colors: {
         primary: "var(--color-primary)",
         primaryDarkMode: "var(--color-primary-dark-mode)",
@@ -31,8 +29,6 @@ module.exports = {
         backgroundAccent: "var(--color-background-accent)",
         backgroundAccentDarkMode: "#343633",
         backgroundHover: "#424242",
-        border: "#c1c1c1",
-        borderDarkMode: "#767975",
       },
     },
   },
