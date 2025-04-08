@@ -1,10 +1,10 @@
 <template>
-  <div>
+  <div class="p-1 mb-12">
     <LayoutPageHeader header="Events"></LayoutPageHeader>
 
     <div class="max-w-screen-lg px-3 mx-auto">
       <div class="md:grid grid-cols-12 px-auto my-12 gap-12">
-        <h2 class="mb-3 col-span-3">Upcoming</h2>
+        <h2 class="mb-3 text-2xl col-span-3">Upcoming</h2>
         <div class="col-span-9">
           <LayoutEvent
             v-for="(event, index) in upcomingEvents"
@@ -12,7 +12,7 @@
             :event="event"
           />
         </div>
-        <h2 class="mb-3 col-span-3">Past</h2>
+        <h2 class="mb-3 text-2xl col-span-3">Past</h2>
         <div class="col-span-9">
           <LayoutEvent
             v-for="(event, index) in pastEvents"
@@ -22,25 +22,24 @@
         </div>
       </div>
 
-      <h5 class="text-3xl font-serif uppercase">Inquiry Form</h5>
+      <h5 class="text-3xl">Submit an Event</h5>
       <br />
       <p class="max-w-xl mx-auto text-center">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi eius
-        veniam harum perspiciatis, sit maiores.
+        Have an alternative event coming up? Let us know!
       </p>
       <br />
       <div class="max-w-xl mx-auto border bg-backgroundAccent p-3 rounded-lg">
         <div v-if="!isContactFormSubmitted" class="flex flex-col gap-2">
-          <label class="hidden" for="name">Name</label>
+          <label class="hidden" for="eventName">Event Name</label>
           <input
-            v-model="name"
-            placeholder="Name"
-            id="name"
+            v-model="eventName"
+            placeholder="Event Name"
+            id="eventName"
             required
             type="text"
             class="placeholder-dark bg-inherit"
           />
-          <label class="hidden" for="email">Email</label>
+          <label class="hidden" for="email">Your Email</label>
           <input
             v-model="email"
             type="text"
@@ -49,48 +48,49 @@
             required
             class="placeholder-dark bg-inherit"
           />
-          <label class="hidden" for="phoneNumber">Phone Number</label>
+          <label class="hidden" for="location">Location</label>
           <input
-            v-model="phoneNumber"
+            v-model="location"
             type="text"
-            placeholder="Telephone"
-            id="phoneNumber"
+            placeholder="Location"
+            id="location"
             required
             class="placeholder-dark bg-inherit"
           />
-          <label class="hidden" for="organizationName">Organization Name</label>
+          <label class="hidden" for="date">Date</label>
           <input
-            v-model="organizationName"
+            v-model="date"
             type="text"
-            placeholder="Organization Name"
-            id="organizationName"
+            placeholder="Date"
+            id="date"
             required
             class="placeholder-dark bg-inherit"
           />
-          <label class="hidden" for="positionName">Your Position</label>
+          <label class="hidden" for="time">Time</label>
           <input
-            v-model="positionName"
+            v-model="time"
             type="text"
-            placeholder="Your Position"
-            id="positionName"
+            placeholder="Time"
+            id="time"
             required
             class="placeholder-dark bg-inherit"
           />
-          <label class="hidden" for="budget">Budget</label>
+          <label class="hidden" for="externalLink">External Link</label>
           <input
-            v-model="budget"
+            v-model="externalLink"
             type="text"
-            placeholder="Budget"
-            id="budget"
+            placeholder="https://..."
+            id="externalLink"
             required
             class="placeholder-dark bg-inherit"
           />
-          <label class="hidden" for="comment">Comment</label>
+
+          <label class="hidden" for="description">Description</label>
           <textarea
-            placeholder="Additional Information"
-            v-model="comment"
+            placeholder="Description"
+            v-model="description"
             class="placeholder-dark border px-3 my-3"
-            id="comment"
+            id="description"
           />
           <button
             @click="handleSubmitContactForm"
@@ -116,12 +116,13 @@ import { db } from "~/firebase.config";
 const events = ref([]);
 const upcomingEvents = ref([]);
 const pastEvents = ref([]);
-const name = ref("");
+const eventName = ref("");
 const email = ref("");
-const phoneNumber = ref("");
-const organizationName = ref("");
-const positionName = ref("");
-const budget = ref("");
+const time = ref("");
+const date = ref("");
+const location = ref("");
+const externalLink = ref("");
+const description = ref("");
 const isButtonDisabled = ref(false);
 const isContactFormSubmitted = ref(false);
 
@@ -190,13 +191,13 @@ const handleSubmitContactForm = () => {
   isButtonDisabled.value = true;
   const templateParams = {
     website: siteName,
-    name: name.value,
+    eventName: eventName.value,
     email: email.value,
-    phoneNumber: phoneNumber.value,
-    organizationName: organizationName.value,
-    positionName: positionName.value,
-    budget: budget.value,
-    comment: comment.value,
+    location: location.value,
+    time: time.value,
+    date: date.value,
+
+    description: description.value,
   };
   try {
     emailjs

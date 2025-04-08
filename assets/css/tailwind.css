@@ -91,22 +91,10 @@ label {
     position: relative;
   }
 
-  .image-container img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    object-fit: cover;
-    width: auto;
-    height: 100%;
-    min-width: 100%;
-    min-height: 100%;
-  }
+  .image-container img,
   .image-container video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    @apply md:absolute md:top-[50%] md:left-[50%] md:-translate-x-[50%] md:-translate-y-[50%];
+
     object-fit: cover;
     width: auto;
     height: 100%;

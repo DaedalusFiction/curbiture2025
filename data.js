@@ -3,7 +3,10 @@ const siteURL = "curbiture.com";
 const siteDescription = "Alternative Charlottesville";
 const GTag = "G-NXV0KGQHF7";
 
-const pages = [{ title: "Articles", href: "/articles" }];
+const pages = [
+  { title: "Events", href: "/events" },
+  { title: "Gallery", href: "/gallery" },
+];
 
 const socialMediaLinks = [
   { title: "Facebook", href: "https://facebook.com" },
