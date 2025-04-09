@@ -10,7 +10,7 @@
             <NuxtLink to="/events" class="uppercase">Events</NuxtLink>
             <NuxtLink to="/gallery" class="uppercase">Gallery</NuxtLink>
           </div>
-          <h1 class="text-primary top-3 text-3xl md:text-7xl">Curbiture</h1>
+          <h1 class="text-primary top-3 text-5xl lg:text-7xl">Curbiture</h1>
           <p class="text-end">Charlottesville Alternative</p>
         </div>
       </div>
@@ -51,8 +51,8 @@
         class="col-span-3 row-span-1 border p-1 flex items-center min-h-32 bg-backgroundAccent"
       >
         <p>
-          the hamburglar longs<br />for the day he will no more<br />steal for
-          sustenance
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem quo
+          doloremque odio.
         </p>
       </div>
       <div class="col-span-3 row-span-2 border image-container">
@@ -67,7 +67,7 @@
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
           voluptas, ad officiis corrupti non ullam sit provident ab earum
-          consequuntur vel commodi natus, nisi autem?
+          consequuntur vel commodi natus.
         </p>
       </div>
       <div class="col-span-3 row-span-3 border image-container">
@@ -80,14 +80,13 @@
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
           voluptas, ad officiis corrupti non ullam sit provident ab earum
-          consequuntur vel commodi natus, nisi autem?
+          consequuntur.
         </p>
       </div>
       <div class="col-span-2 row-span-1 border p-1 flex items-center min-h-32">
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-          voluptas, ad officiis corrupti non ullam sit provident ab earum
-          consequuntur vel commodi natus, nisi autem?
+          voluptas, ad officiis corrupti non ullam sit provident.
         </p>
       </div>
       <div class="col-span-7 row-span-3 border image-container">

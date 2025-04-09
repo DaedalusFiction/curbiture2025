@@ -19,10 +19,10 @@
 
     <div class="flex gap-2">
       <button class="btn" @click="submitForm">
-        <p>{{ contributor ? "Update" : "Submit" }}</p>
+        {{ contributor ? "Update" : "Submit" }}
       </button>
       <button v-if="contributor" class="btn" @click="handleDeleteDocument">
-        <p>Delete</p>
+        Delete
       </button>
     </div>
   </div>

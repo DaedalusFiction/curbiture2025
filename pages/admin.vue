@@ -24,7 +24,7 @@
           </div>
         </div>
         <div class="col-span-10 p-3">
-          <AdminImage v-if="selectedPanel === 'Images'" />
+          <AdminImageList v-if="selectedPanel === 'Images'" />
           <AdminEventList v-if="selectedPanel === 'Events'" />
           <AdminArticleList v-if="selectedPanel === 'Articles'" />
           <AdminContributorList v-if="selectedPanel === 'Contributors'" />

@@ -18,15 +18,15 @@
       <div
         v-for="event in events"
         :key="event.id"
-        class="rounded transition my-1 border"
+        class="rounded transition my-1 border hover:bg-backgroundAccent"
+        :class="
+          expandedItems[event.id] &&
+          'bg-backgroundAccent dark:bg-backgroundAccentDarkMode'
+        "
       >
         <div
           @click="toggleExpand(event.id)"
-          class="flex p-2 justify-between rounded cursor-pointer hover:bg-backgroundAccent dark:hover:bg-backgroundAccentDarkMode"
-          :class="
-            expandedItems[event.id] &&
-            'bg-backgroundAccent dark:bg-backgroundAccentDarkMode'
-          "
+          class="flex p-1 justify-between rounded cursor-pointer dark:hover:bg-backgroundAccentDarkMode"
         >
           <p>{{ event.data().title || "No Title" }}</p>
           <p>
