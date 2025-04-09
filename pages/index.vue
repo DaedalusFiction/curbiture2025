@@ -41,13 +41,20 @@
       <div class="col-span-5 row-span-4 border image-container">
         <img src="/public/images/daedalus1.webp" alt="" />
       </div>
-      <div class="col-span-4 row-span-1 border p-1 flex items-center min-h-32">
+      <div
+        v-scroll-animation="animationOptions"
+        class="col-span-4 row-span-1 border p-1 flex items-center min-h-32"
+      >
         <p>LGBTQIA+</p>
       </div>
-      <div class="col-span-4 row-span-3 border image-container">
+      <div
+        v-scroll-animation="animationOptions"
+        class="col-span-4 row-span-3 border image-container"
+      >
         <img src="/public/images/herbs.webp" alt="" />
       </div>
       <div
+        v-scroll-animation="animationOptions"
         class="col-span-3 row-span-1 border p-1 flex items-center min-h-32 bg-backgroundAccent"
       >
         <p>
@@ -55,13 +62,20 @@
           doloremque odio.
         </p>
       </div>
-      <div class="col-span-3 row-span-2 border image-container">
+      <div
+        v-scroll-animation="animationOptions"
+        class="col-span-3 row-span-2 border image-container"
+      >
         <img src="/public/images/sunset.webp" alt="" />
       </div>
-      <div class="col-span-5 row-span-4 border image-container">
+      <div
+        v-scroll-animation="animationOptions"
+        class="col-span-5 row-span-4 border image-container"
+      >
         <img src="/public/images/24Sign.webp" alt="" />
       </div>
       <div
+        v-scroll-animation="animationOptions"
         class="col-span-7 row-span-1 border p-1 flex items-center min-h-32 bg-backgroundAccent"
       >
         <p>
@@ -70,44 +84,77 @@
           consequuntur vel commodi natus.
         </p>
       </div>
-      <div class="col-span-3 row-span-3 border image-container">
+      <div
+        v-scroll-animation="animationOptions"
+        class="col-span-3 row-span-3 border image-container"
+      >
         <img src="/public/images/origamiJesus.webp" alt="" />
       </div>
-      <div class="col-span-4 row-span-2 border image-container">
+      <div
+        v-scroll-animation="animationOptions"
+        class="col-span-4 row-span-2 border image-container"
+      >
         <img src="/public/images/alethea.webp" alt="" />
       </div>
-      <div class="col-span-5 row-span-1 border p-1 flex items-center min-h-32">
+      <div
+        v-scroll-animation="animationOptions"
+        class="col-span-5 row-span-1 border p-1 flex items-center min-h-32"
+      >
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
           voluptas, ad officiis corrupti non ullam sit provident ab earum
           consequuntur.
         </p>
       </div>
-      <div class="col-span-2 row-span-1 border p-1 flex items-center min-h-32">
+      <div
+        v-scroll-animation="animationOptions"
+        class="col-span-2 row-span-1 border p-1 flex items-center min-h-32"
+      >
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
           voluptas, ad officiis corrupti non ullam sit provident.
         </p>
       </div>
-      <div class="col-span-7 row-span-3 border image-container">
+      <div
+        v-scroll-animation="animationOptions"
+        class="col-span-7 row-span-3 border image-container"
+      >
         <img src="/public/images/aspenAndWinston.webp" alt="" />
       </div>
-      <div class="col-span-5 row-span-3 border image-container">
+      <div
+        v-scroll-animation="animationOptions"
+        class="col-span-5 row-span-3 border image-container"
+      >
         <img src="/public/images/gummies.webp" alt="" />
       </div>
-      <div class="col-span-3 row-span-3 border image-container">
+      <div
+        v-scroll-animation="animationOptions"
+        class="col-span-3 row-span-3 border image-container"
+      >
         <img src="/public/images/cardboardPoem.webp" alt="" />
       </div>
-      <div class="col-span-4 row-span-2 border image-container">
+      <div
+        v-scroll-animation="animationOptions"
+        class="col-span-4 row-span-2 border image-container"
+      >
         <img src="/public/images/infiniteEre.webp" alt="" />
       </div>
-      <div class="col-span-3 row-span-2 border image-container">
+      <div
+        v-scroll-animation="animationOptions"
+        class="col-span-3 row-span-2 border image-container"
+      >
         <img src="/public/images/pizzaBox.webp" alt="" />
       </div>
-      <div class="col-span-2 row-span-2 border image-container">
+      <div
+        v-scroll-animation="animationOptions"
+        class="col-span-2 row-span-2 border image-container"
+      >
         <img src="/public/images/frostFlowers.webp" alt="" />
       </div>
-      <div class="col-span-4 row-span-1 border p-1 flex items-center min-h-32">
+      <div
+        v-scroll-animation="animationOptions"
+        class="col-span-4 row-span-1 border p-1 flex items-center min-h-32"
+      >
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
           voluptas, ad officiis corrupti non ullam sit provident ab earum
@@ -118,11 +165,17 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+const animationOptions = { translateY: 10, delay: 0.2, threshold: 0.5 };
+</script>
 
 <style scoped>
 .hero-header {
   font-size: clamp(3rem, 15vw, 17rem);
   mix-blend-mode: difference;
+}
+
+img {
+  @apply transition duration-700 hover:invert;
 }
 </style>

@@ -5,7 +5,7 @@ export default defineNuxtPlugin((nuxtApp) => {
     mounted(el, binding) {
       // Get options from binding value or use defaults
       const options = {
-        threshold: 0.1,
+        threshold: 0,
         delay: 0,
         duration: 0.8,
         translateX: 0,
