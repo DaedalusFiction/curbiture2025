@@ -141,15 +141,25 @@
       </div>
       <div
         v-scroll-animation="animationOptions"
-        class="col-span-3 row-span-2 border image-container"
+        class="col-span-3 row-span-1 border p-1 flex items-center min-h-32"
       >
-        <img src="/public/images/pizzaBox.webp" alt="" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+          voluptas, ad officiis corrupti non ullam sit provident ab earum
+          consequuntur vel commodi natus, nisi autem?
+        </p>
       </div>
       <div
         v-scroll-animation="animationOptions"
-        class="col-span-2 row-span-2 border image-container"
+        class="col-span-2 row-span-3 border image-container"
       >
         <img src="/public/images/frostFlowers.webp" alt="" />
+      </div>
+      <div
+        v-scroll-animation="animationOptions"
+        class="col-span-3 row-span-2 border image-container"
+      >
+        <img src="/public/images/teaHouse.webp" alt="" />
       </div>
       <div
         v-scroll-animation="animationOptions"
@@ -160,6 +170,40 @@
           voluptas, ad officiis corrupti non ullam sit provident ab earum
           consequuntur vel commodi natus, nisi autem?
         </p>
+      </div>
+      <div
+        v-scroll-animation="animationOptions"
+        class="col-span-5 row-span-2 border image-container"
+      >
+        <img src="/public/images/sadie.webp" alt="" />
+      </div>
+      <div
+        v-scroll-animation="animationOptions"
+        class="col-span-2 row-span-4 border image-container"
+      >
+        <img src="/public/images/horses.webp" alt="" />
+      </div>
+      <div
+        v-scroll-animation="animationOptions"
+        class="col-span-2 row-span-3 border image-container"
+      >
+        <img src="/public/images/pizzaBox.webp" alt="" />
+      </div>
+      <div
+        v-scroll-animation="animationOptions"
+        class="col-span-3 row-span-1 border p-1 flex items-center min-h-32"
+      >
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+          voluptas, ad officiis corrupti non ullam sit provident ab earum
+          consequuntur vel commodi natus, nisi autem?
+        </p>
+      </div>
+      <div
+        v-scroll-animation="animationOptions"
+        class="col-span-8 row-span-2 border image-container"
+      >
+        <img src="/public/images/pumpkins.webp" alt="" />
       </div>
     </div>
   </div>

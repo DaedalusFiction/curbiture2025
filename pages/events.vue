@@ -11,6 +11,7 @@
             :key="index"
             :event="event"
           />
+          <p v-if="pastEvents.length === 0">No upcoming events to show</p>
         </div>
         <h2 class="mb-3 text-2xl col-span-3">Past</h2>
         <div class="col-span-9">
@@ -19,89 +20,90 @@
             :key="index"
             :event="event"
           />
+          <p v-if="pastEvents.length === 0">No past events to show</p>
         </div>
       </div>
+    </div>
+    <div class="max-w-screen-lg px-3 mx-auto">
+      <div class="md:grid grid-cols-12 px-auto my-12 gap-12">
+        <h2 class="mb-3 text-2xl col-span-3">Submit</h2>
+        <div class="col-span-9">
+          <div class="border bg-backgroundAccent p-3 rounded-lg">
+            <div v-if="!isContactFormSubmitted" class="flex flex-col gap-2">
+              <label class="hidden" for="eventName">Event Name</label>
+              <input
+                v-model="eventName"
+                placeholder="Event Name"
+                id="eventName"
+                required
+                type="text"
+                class="placeholder-dark bg-inherit"
+              />
+              <label class="hidden" for="email">Your Email</label>
+              <input
+                v-model="email"
+                type="text"
+                placeholder="Email"
+                id="email"
+                required
+                class="placeholder-dark bg-inherit"
+              />
+              <label class="hidden" for="location">Location</label>
+              <input
+                v-model="location"
+                type="text"
+                placeholder="Location"
+                id="location"
+                required
+                class="placeholder-dark bg-inherit"
+              />
+              <label class="hidden" for="date">Date</label>
+              <input
+                v-model="date"
+                type="text"
+                placeholder="Date"
+                id="date"
+                required
+                class="placeholder-dark bg-inherit"
+              />
+              <label class="hidden" for="time">Time</label>
+              <input
+                v-model="time"
+                type="text"
+                placeholder="Time"
+                id="time"
+                required
+                class="placeholder-dark bg-inherit"
+              />
+              <label class="hidden" for="externalLink">External Link</label>
+              <input
+                v-model="externalLink"
+                type="text"
+                placeholder="https://..."
+                id="externalLink"
+                required
+                class="placeholder-dark bg-inherit"
+              />
 
-      <h5 class="text-3xl">Submit an Event</h5>
-      <br />
-      <p class="max-w-xl mx-auto text-center">
-        Have an alternative event coming up? Let us know!
-      </p>
-      <br />
-      <div class="max-w-xl mx-auto border bg-backgroundAccent p-3 rounded-lg">
-        <div v-if="!isContactFormSubmitted" class="flex flex-col gap-2">
-          <label class="hidden" for="eventName">Event Name</label>
-          <input
-            v-model="eventName"
-            placeholder="Event Name"
-            id="eventName"
-            required
-            type="text"
-            class="placeholder-dark bg-inherit"
-          />
-          <label class="hidden" for="email">Your Email</label>
-          <input
-            v-model="email"
-            type="text"
-            placeholder="Email"
-            id="email"
-            required
-            class="placeholder-dark bg-inherit"
-          />
-          <label class="hidden" for="location">Location</label>
-          <input
-            v-model="location"
-            type="text"
-            placeholder="Location"
-            id="location"
-            required
-            class="placeholder-dark bg-inherit"
-          />
-          <label class="hidden" for="date">Date</label>
-          <input
-            v-model="date"
-            type="text"
-            placeholder="Date"
-            id="date"
-            required
-            class="placeholder-dark bg-inherit"
-          />
-          <label class="hidden" for="time">Time</label>
-          <input
-            v-model="time"
-            type="text"
-            placeholder="Time"
-            id="time"
-            required
-            class="placeholder-dark bg-inherit"
-          />
-          <label class="hidden" for="externalLink">External Link</label>
-          <input
-            v-model="externalLink"
-            type="text"
-            placeholder="https://..."
-            id="externalLink"
-            required
-            class="placeholder-dark bg-inherit"
-          />
-
-          <label class="hidden" for="description">Description</label>
-          <textarea
-            placeholder="Description"
-            v-model="description"
-            class="placeholder-dark border px-3 my-3"
-            id="description"
-          />
-          <button
-            @click="handleSubmitContactForm"
-            :disabled="isButtonDisabled"
-            class="btn"
-          >
-            Submit
-          </button>
-        </div>
-        <div v-else>
-          <p>Thank you so much!</p>
+              <label class="hidden" for="description">Description</label>
+              <textarea
+                placeholder="Description"
+                v-model="description"
+                class="placeholder-dark border px-3 my-3"
+                id="description"
+              />
+              <button
+                @click="handleSubmitContactForm"
+                :disabled="isButtonDisabled"
+                class="btn"
+              >
+                Submit
+              </button>
+            </div>
+            <div v-else>
+              <p>Thank you so much!</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
