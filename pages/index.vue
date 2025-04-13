@@ -219,6 +219,13 @@ const animationOptions = { translateY: 10, delay: 0.2, threshold: 0.5 };
   mix-blend-mode: difference;
 }
 
+.image-container img,
+.image-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 img {
   @apply transition duration-700 hover:invert;
 }
