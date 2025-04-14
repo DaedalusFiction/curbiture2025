@@ -8,7 +8,7 @@
     <br />
     <p class="whitespace-pre-wrap">{{ event.description }}</p>
     <br />
-    <p class="underline link">
+    <p v-if="event.href" class="underline link">
       <a :href="event.href" rel="noreferrer" target="_blank"
         >More Information</a
       >

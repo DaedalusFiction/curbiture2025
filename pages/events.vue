@@ -79,7 +79,7 @@
               <input
                 v-model="externalLink"
                 type="text"
-                placeholder="https://..."
+                placeholder="External Link"
                 id="externalLink"
                 required
                 class="placeholder-dark bg-inherit"
