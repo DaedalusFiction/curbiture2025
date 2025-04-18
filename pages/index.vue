@@ -51,7 +51,7 @@
         v-scroll-animation="animationOptions"
         class="col-span-4 row-span-3 border image-container"
       >
-        <img src="/public/images/herbs.webp" alt="" />
+        <img src="/public/images/backpack.webp" alt="" />
       </div>
       <div
         v-scroll-animation="animationOptions"
@@ -66,13 +66,13 @@
         v-scroll-animation="animationOptions"
         class="col-span-3 row-span-2 border image-container"
       >
-        <img src="/public/images/sunset.webp" alt="" />
+        <img src="/public/images/pbr.webp" alt="" />
       </div>
       <div
         v-scroll-animation="animationOptions"
         class="col-span-5 row-span-4 border image-container"
       >
-        <img src="/public/images/24Sign.webp" alt="" />
+        <img src="/public/images/flyShoes.webp" alt="" />
       </div>
       <div
         v-scroll-animation="animationOptions"
@@ -119,7 +119,7 @@
         v-scroll-animation="animationOptions"
         class="col-span-7 row-span-3 border image-container"
       >
-        <img src="/public/images/aspenAndWinston.webp" alt="" />
+        <img src="/public/images/herbs.webp" alt="" />
       </div>
       <div
         v-scroll-animation="animationOptions"
@@ -159,7 +159,7 @@
         v-scroll-animation="animationOptions"
         class="col-span-3 row-span-2 border image-container"
       >
-        <img src="/public/images/teaHouse.webp" alt="" />
+        <img src="/public/images/southernFried.webp" alt="" />
       </div>
       <div
         v-scroll-animation="animationOptions"
@@ -175,19 +175,19 @@
         v-scroll-animation="animationOptions"
         class="col-span-5 row-span-2 border image-container"
       >
-        <img src="/public/images/sadie.webp" alt="" />
+        <img src="/public/images/puzzle.webp" alt="" />
       </div>
       <div
         v-scroll-animation="animationOptions"
         class="col-span-2 row-span-4 border image-container"
       >
-        <img src="/public/images/horses.webp" alt="" />
+        <img src="/public/images/sadie.webp" alt="" />
       </div>
       <div
         v-scroll-animation="animationOptions"
         class="col-span-2 row-span-3 border image-container"
       >
-        <img src="/public/images/pizzaBox.webp" alt="" />
+        <img src="/public/images/microphone.webp" alt="" />
       </div>
       <div
         v-scroll-animation="animationOptions"
@@ -203,7 +203,7 @@
         v-scroll-animation="animationOptions"
         class="col-span-8 row-span-2 border image-container"
       >
-        <img src="/public/images/pumpkins.webp" alt="" />
+        <img src="/public/images/flowers.webp" alt="" />
       </div>
     </div>
   </div>
